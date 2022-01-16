@@ -1,0 +1,74 @@
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+	git branch Postman
+	git branch Jmeter
+	git branch CheckLists
+	git branch BugReports
+	git branch SQL
+	git branch Charles
+	git branch Mobile testing
+2. Запушить все ветки на внешний репозиторий
+	git push -u origin --all
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта.
+	git checkout BugReports
+	touch bugreports.txt 
+	vim bugreports.txt
+--Insert--
+	1. ID 1.1
+	2. Summary 
+	Ошибка PHP появляется в окне после ввода SQL запроса в поле логина.
+	3. Descriprion
+	Если ввести SQL запрос в поле логина и нажать кнопку [Поехали] появляется ошибка PHP в
+	Фактический результат: Предупреждение: mysqli_num_rows() ожидает, что параметр 1 будет mysqli_result, логическим значением, заданным в C:\OpenServer\domains\megatask\index.php в строке 15.
+	Ожидаемый результат: Появляется окно с текстом Ошибка
+
+	Воспроизведено на: Chrome
+	Воспроизводимость: всегда
+	Обходной путь: нет
+	4. Steps to reproduce
+		1) Open page via URL http://megatask/ 
+		2) Enter  DB request (SELECT * FROM users WHERE u_ul LIKE ‘a%’) in field "Логин"
+		3) Enter  correct password (b) in field "Пароль"
+		4) Press [Поехали] button
+	5. Severity	Minor
+	6. Priority	Normal
+
+	--ESC--
+	:wq
+
+4. Запушить структуру багрепорта на внешний репозиторий
+	git add bugreports.txt
+	git commit -m "add bugreports.txt"
+	git push 
+5. Вмержить ветку Bag Reports в Main
+	git checkout main
+	git merge BugReports
+6. Запушить main на внешний репозиторий.
+	git push 
+7. В ветке CheckLists набросать структуру чек листа.
+	git checkout Checklists
+	cat > checklists.txt
+	1) ID
+	2) Case_Name
+	3) Result
+	4) Comments
+
+8. Запушить структуру на внешний репозиторий
+	git push 
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+	-> Compare&Pull request  
+	//compare: CheckLists; base: main
+	-> Create pull request
+	//add checklists.txt 
+	-> Merge pull request 
+	-> Confirm merge
+10. Синхронизировать Внешнюю и Локальную ветки Main
+	git checkout main
+	git pull
+
