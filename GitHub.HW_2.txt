@@ -17,25 +17,13 @@
 	git push -u origin --all
 3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта.
 	git checkout BugReports
-	touch bugreports.txt 
-	vim bugreports.txt
+	touch bugreports_str.txt 
+	vim bugreports_str.txt
 --Insert--
-	1. ID 1.1
+	1. ID 
 	2. Summary 
-	Ошибка PHP появляется в окне после ввода SQL запроса в поле логина.
 	3. Descriprion
-	Если ввести SQL запрос в поле логина и нажать кнопку [Поехали] появляется ошибка PHP в
-	Фактический результат: Предупреждение: mysqli_num_rows() ожидает, что параметр 1 будет mysqli_result, логическим значением, заданным в C:\OpenServer\domains\megatask\index.php в строке 15.
-	Ожидаемый результат: Появляется окно с текстом Ошибка
-
-	Воспроизведено на: Chrome
-	Воспроизводимость: всегда
-	Обходной путь: нет
 	4. Steps to reproduce
-		1) Open page via URL http://megatask/ 
-		2) Enter  DB request (SELECT * FROM users WHERE u_ul LIKE ‘a%’) in field "Логин"
-		3) Enter  correct password (b) in field "Пароль"
-		4) Press [Поехали] button
 	5. Severity	Minor
 	6. Priority	Normal
 
@@ -43,8 +31,8 @@
 	:wq
 
 4. Запушить структуру багрепорта на внешний репозиторий
-	git add bugreports.txt
-	git commit -m "add bugreports.txt"
+	git add bugreports_str.txt
+	git commit -m "add bugreports_str.txt"
 	git push 
 5. Вмержить ветку Bag Reports в Main
 	git checkout main
