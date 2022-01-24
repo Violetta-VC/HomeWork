@@ -1,0 +1,172 @@
+{
+	"id": "fc677e64-be4b-4b46-981c-949b730aa1fd",
+	"name": "Postman.HW_1",
+	"timestamp": "2022-01-24T12:40:52.269Z",
+	"collection_id": "17375345-5dd9b9fb-c6c4-47dd-8561-cf2c5bbd5382",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ee3e1503-7759-4146-8bc0-14b624f4804a",
+			"name": "EP_1",
+			"url": "http://162.55.220.72:5005/get_method?name=Violetta&age=32",
+			"time": 102,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				102
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8b106177-8b17-4a8c-9be6-c311bca0b4e0",
+			"name": "EP_2",
+			"url": "http://162.55.220.72:5005/user_info_3",
+			"time": 105,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				105
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "67bf8e71-77b7-4be1-87a1-0dadab64ab69",
+			"name": "EP_7",
+			"url": "http://162.55.220.72:5005/user_info_2",
+			"time": 106,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				106
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f48c03ec-ab10-45c5-aab0-cd0d8a132bff",
+			"name": "EP_3",
+			"url": "http://162.55.220.72:5005/object_info_1?name=Violetta&age=32&weight=60",
+			"time": 100,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				100
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "bcf5d03a-1487-4fc1-8ebf-a6e728293da1",
+			"name": "EP_4",
+			"url": "http://162.55.220.72:5005/object_info_2?name=Violetta&age=32&salary=500",
+			"time": 70,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				70
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "69cd889c-0e8a-4f6e-940a-d29abdd395e5",
+			"name": "EP_5",
+			"url": "http://162.55.220.72:5005/object_info_3?name=Violetta&age=32&salary=500",
+			"time": 1090,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1090
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "506ae1fb-a02d-4eae-8d74-57babbe7fb76",
+			"name": "EP_6",
+			"url": "http://162.55.220.72:5005/object_info_4?name=Violetta&age=32&salary=500",
+			"time": 76,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				76
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1649,
+	"collection": {
+		"requests": [
+			{
+				"id": "ee3e1503-7759-4146-8bc0-14b624f4804a",
+				"method": "GET"
+			},
+			{
+				"id": "8b106177-8b17-4a8c-9be6-c311bca0b4e0",
+				"method": "POST"
+			},
+			{
+				"id": "67bf8e71-77b7-4be1-87a1-0dadab64ab69",
+				"method": "POST"
+			},
+			{
+				"id": "f48c03ec-ab10-45c5-aab0-cd0d8a132bff",
+				"method": "GET"
+			},
+			{
+				"id": "bcf5d03a-1487-4fc1-8ebf-a6e728293da1",
+				"method": "GET"
+			},
+			{
+				"id": "69cd889c-0e8a-4f6e-940a-d29abdd395e5",
+				"method": "GET"
+			},
+			{
+				"id": "506ae1fb-a02d-4eae-8d74-57babbe7fb76",
+				"method": "GET"
+			}
+		]
+	}
+}
