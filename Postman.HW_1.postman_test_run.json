@@ -1,0 +1,242 @@
+{
+	"id": "af07be04-21c2-4fd5-96bb-39b9d4630750",
+	"name": "Postman.HW_1",
+	"timestamp": "2022-03-02T08:46:01.764Z",
+	"collection_id": "17375345-5dd9b9fb-c6c4-47dd-8561-cf2c5bbd5382",
+	"folder_id": 0,
+	"environment_id": "17375345-de3bd1b7-466e-4ec0-b001-4289d0f00c88",
+	"totalPass": 6,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ee3e1503-7759-4146-8bc0-14b624f4804a",
+			"name": "/get_method",
+			"url": "http://162.55.220.72:5005/get_method?name=Violetta&age=32",
+			"time": 75,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				75
+			],
+			"allTests": [
+				{
+					"Body matches string": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8b106177-8b17-4a8c-9be6-c311bca0b4e0",
+			"name": "/user_info_3",
+			"url": "http://162.55.220.72:5005/user_info_3",
+			"time": 77,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				77
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "67bf8e71-77b7-4be1-87a1-0dadab64ab69",
+			"name": "/user_info_2",
+			"url": "http://162.55.220.72:5005/user_info_2",
+			"time": 93,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				93
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f48c03ec-ab10-45c5-aab0-cd0d8a132bff",
+			"name": "/object_info_1",
+			"url": "http://162.55.220.72:5005/object_info_1?name=Violetta&age=32&weight=60",
+			"time": 88,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check age": true,
+				"Check name": true
+			},
+			"testPassFailCounts": {
+				"Check age": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				88
+			],
+			"allTests": [
+				{
+					"Check age": true,
+					"Check name": true
+				}
+			]
+		},
+		{
+			"id": "bcf5d03a-1487-4fc1-8ebf-a6e728293da1",
+			"name": "/object_info_2",
+			"url": "http://162.55.220.72:5005/object_info_2?name=Violetta&age=32&salary=2000",
+			"time": 103,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				103
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "69cd889c-0e8a-4f6e-940a-d29abdd395e5",
+			"name": "/object_info_3",
+			"url": "http://162.55.220.72:5005/object_info_3?name=Violetta&age=32&salary=500",
+			"time": 100,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				100
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "506ae1fb-a02d-4eae-8d74-57babbe7fb76",
+			"name": "/object_info_4",
+			"url": "http://162.55.220.72:5005/object_info_4?name=Violetta&age=32&salary=1000",
+			"time": 70,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check salary": true
+			},
+			"testPassFailCounts": {
+				"Check salary": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				70
+			],
+			"allTests": [
+				{
+					"Check salary": true
+				}
+			]
+		},
+		{
+			"id": "52337d1c-4388-42af-bf95-dc30325f542c",
+			"name": "/first",
+			"url": "http://162.55.220.72:5005/first",
+			"time": 69,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				69
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 675,
+	"collection": {
+		"requests": [
+			{
+				"id": "ee3e1503-7759-4146-8bc0-14b624f4804a",
+				"method": "GET"
+			},
+			{
+				"id": "8b106177-8b17-4a8c-9be6-c311bca0b4e0",
+				"method": "POST"
+			},
+			{
+				"id": "67bf8e71-77b7-4be1-87a1-0dadab64ab69",
+				"method": "POST"
+			},
+			{
+				"id": "f48c03ec-ab10-45c5-aab0-cd0d8a132bff",
+				"method": "GET"
+			},
+			{
+				"id": "bcf5d03a-1487-4fc1-8ebf-a6e728293da1",
+				"method": "GET"
+			},
+			{
+				"id": "69cd889c-0e8a-4f6e-940a-d29abdd395e5",
+				"method": "GET"
+			},
+			{
+				"id": "506ae1fb-a02d-4eae-8d74-57babbe7fb76",
+				"method": "GET"
+			},
+			{
+				"id": "52337d1c-4388-42af-bf95-dc30325f542c",
+				"method": "GET"
+			}
+		]
+	}
+}
